@@ -1,0 +1,18 @@
+div:first-child:hover{
+display: 
+}
+
+div:nth-child(2){
+display: none;
+
+}
+
+div:last-child{
+display: none;
+
+}
+
+div:nth-child(2), div:last-child:hover{
+  display: block;
+}
+

@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menubar {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 1px;
+  justify-content: space-evenly;
+}
+
+.menu {
+  color: aliceblue;
+}
