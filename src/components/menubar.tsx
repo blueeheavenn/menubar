@@ -5,7 +5,7 @@ import Deals from './Deals';
 import Contact from './contact';
 import style from '../assets/styles/menubar.module.css';
 
-const Menubar = ({ children }: { children: React.ReactNode }): JSX.Element => {
+const Menubar = (): JSX.Element => {
   return (
     <div className={style.menubar}>
       <Categories />

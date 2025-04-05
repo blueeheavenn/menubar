@@ -3,13 +3,16 @@ export type catType = {
   subcategories?: catType[];
 };
 
-const cat: catType = [
+const cat: catType[] = [
   {
     name: 'Electronics',
     subcategories: [
       {
         name: 'Laptops',
-        subcategories: [{ name: 'Gaming' }, { name: 'Business' }],
+        subcategories: [
+          { name: 'Gaming' },
+          { name: 'Business' },
+        ],
       },
       { name: 'Smartphones' },
       { name: 'TVs' },
@@ -17,12 +20,19 @@ const cat: catType = [
   },
   {
     name: 'Clothing',
-    subcategories: [{ name: "Men's" }, { name: "Women's" }],
+    subcategories: [
+      { name: "Men's" },
+      { name: "Women's" },
+    ],
   },
   {
     name: 'Home & Kitchen',
-    subcategories: [{ name: 'Appliances' }, { name: 'Furniture' }],
+    subcategories: [
+      { name: 'Appliances' },
+      { name: 'Furniture' },
+    ],
   },
 ];
+
 
 export default cat;

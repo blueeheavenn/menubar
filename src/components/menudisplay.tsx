@@ -1,7 +1,30 @@
-import { JSX } from 'react/jsx-runtime';
-import cat, { catType } from '../data/cat.ts';
-const Menudisplay = (cat: catType[]): JSX.Element => {
-  return <div>{cat.m}</div>;
-};
+import  { JSX } from 'react';
+import { catType } from '../data/cat.ts';
+import recursiveCategory from '../utilities/catUtility.ts';
 
-export default Menudisplay;
+    type MenudisplayProps = {
+      data: catType[]; // Correct prop type
+    };
+
+    const Menudisplay = ({ data }: MenudisplayProps): JSX.Element => {
+      
+    const categoryData=recursiveCategory(data)
+      
+             
+      return (<ul>
+          <div>
+          {categoryData.map((item, index) => (
+                  
+            <li style={{ listStyle: 'none' }} key={`${index}`}><pre>{item}</pre></li>
+                  
+          ))}
+          </div>
+              </ul>
+      
+      
+      
+         ) ; // Corrected rendering
+      
+    };
+
+    export default Menudisplay;

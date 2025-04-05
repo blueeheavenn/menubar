@@ -1,11 +1,14 @@
-import cat from '../data/cat.ts';
+import cat, {catType} from '../data/cat.ts';
 import Menudisplay from './menudisplay.tsx';
 
 const Categories = () => {
+
+  
+ const data: catType[] = cat;
   return (
-    <div>
+    <div> 
       Categories
-      <Menudisplay data={cat} />
+      <Menudisplay data={data} />
     </div>
   );
 };
